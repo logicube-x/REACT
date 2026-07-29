@@ -4,7 +4,21 @@ const h1=document.createElement("h1");
 h1.textContent="Hello from Real Dom";
 document.body.append(h1)
 
-const rh1=React.createElement("h1")
+const rh1=React.createElement("h1",
+    {class:"box"},
+    React.createElement("span",
+        null,
+        "i am span -React(under h1)"
+    ))
+
+    // document.body.append(rh1); Not applicable it shows [Object][Object] in web page , reason: i cannot understand parse
+
+const realDOMelem=document.querySelector("#root");
+const rootOfReact=ReactDOM.createRoot(realDOMelem);
+rootOfReact.render(rh1);
+
 
 console.log("Real Dom",h1);
 console.log("virtual Dom",rh1);
+
+
