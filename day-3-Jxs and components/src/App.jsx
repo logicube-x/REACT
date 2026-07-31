@@ -3,14 +3,13 @@ import React from "react";
 
 let App=()=>{
 
-  let ui=React.createElement("div",{},[
-    React.createElement("h1",{},"Hello"),
-    React.createElement("h2",{},"i am "),
-    React.createElement("h3g",{},"Arsh")
-  ])
-
-  return ui
-
+  return(
+    <div>
+  <h1>Arsh</h1>
+  <h2>Amin</h2>
+  <h3>Mansuri</h3>
+</div>
+  )
 }
 
 export default App;
