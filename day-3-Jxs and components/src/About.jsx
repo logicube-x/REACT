@@ -1,12 +1,12 @@
 import React from "react";
 
-    let About =(props)=>{
+    let About =({width,children})=>{
     
        
-    console.log(props.name,props.width)
+    console.log(width)
     return <div>
         <h1>Hey i am About </h1>
-        
+        {children}
     </div>
 }
 
