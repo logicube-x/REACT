@@ -1,15 +1,18 @@
 import React from "react";
-import About from "./About";
-import { one } from "./test";
-import something from "./test"
+import About from "./components/About";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Footer from "./components/Footer";
+
 const App=()=>{
-one();
-something();
+
 
     return(
         <div>
-            <h1>I am simple app</h1>
+            <Navbar/>
+            <Hero/>
             <About/>
+            <Footer/>
         </div>
     )
 }
